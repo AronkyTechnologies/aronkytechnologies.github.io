@@ -1,96 +1,85 @@
+<!-- Thank u Bedimcode-->
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <meta charset="UTF-32">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aronky Technologies</title>
-    <link rel="icon" type="image/png" href="img/Aronky.png"/>
-</head>
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-<body style="background-color: #7c71da;">
-    <script>
-        console.log('%cPowered Aronky Technologies \n\n\n\n', 'font-weight: bold; font-size: 50px;color: orange; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)');
-        console.log('%cFai un salto sul nostro discord ;) https://discord.gg/rFqv9DHtdz', "font-size: 15px; color: rgb(75,110,236);")
-    </script>
-    <div class="flex-rectangle"></div>
-    <p class="line-1 anim-typewriter">► C:\Commodore\User\X86 run: Coming_Soon.exe</p>
-    <style>
-        /* Google Fonts */
-        @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        /* Global */
-        html {
-            min-height: 100%;
-            overflow: hidden;
-        }
+        <title>Responsive 404 website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    XCOMPANY
+                </a>
 
-        body {
-            height: calc(100vh - 8em);
-            padding: 4em;
-            color: rgba(255, 255, 255, .75);
-            font-family: 'Anonymous Pro', monospace;
-            background-color: rgb(25, 25, 25);
-        }
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
 
-        .line-1 {
-            position: relative;
-            top: 50%;
-            width: 24em;
-            margin: 0 auto;
-            border-right: 2px solid rgba(255, 255, 255, .75);
-            font-size: 180%;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            transform: translateY(-50%);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
 
-        /* Animation */
-        .anim-typewriter {
-            animation: typewriter 4s steps(44) 1s 1 normal both,
-                blinkTextCursor 500ms steps(44) infinite normal;
-        }
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
 
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home">
+                <div class="home__container container">
+                    <div class="home__data">
+                        <span class="home__subtitle">Error 404</span>
+                        <h1 class="home__title">Hey Buddy</h1>
+                        <p class="home__description">
+                            We can't seem to find the page <br> you are looking for.
+                        </p>
+                        <a href="#" class="home__button">
+                            Go Home
+                        </a>
+                    </div>
 
-        @keyframes typewriter {
-            from {
-                width: 0;
-            }
+                    <div class="home__img">
+                        <img src="assets/img/ghost-img.png" alt="">
+                        <div class="home__shadow"></div>
+                    </div>
+                </div>
 
-            to {
-                width: 24em;
-            }
+                <footer class="home__footer">
+                    <span>(554) 987-654</span>
+                    <span>|</span>
+                    <span>info@company.com</span>
+                </footer>
+            </section>
+        </main>
 
-        }
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-        @keyframes blinkTextCursor {
-            from {
-                border-right-color: rgba(255, 255, 255, .75);
-            }
-
-            to {
-                border-right-color: transparent;
-            }
-        }
-
-        .flex-rectangle {
-            width: 100%;
-            height: 95%;
-            background: #3e32a2;
-        }
-
-        .flex-rectangle:before {
-            content: "";
-            display: block;
-            padding-top: 44.5%;
-        }
-    </style>
-</body>
-
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
